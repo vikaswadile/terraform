@@ -10,10 +10,10 @@ variable "ami_details" {
   type = string
 }
 
-variable "instance" {
+variable "instance_type" {
   type = string
 }
 
-variable "name" {
+variable "instance_name" {
   type = string
 }
