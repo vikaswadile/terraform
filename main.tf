@@ -8,8 +8,8 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami                    = "${var.ami_details}"
-  instance_type          = "${var.instance}"
+  instance_type          = "${var.instance_type}"
   tags = {
-    Name = "${var.name}"
+    Name = "${var.instance_name}"
   }
 }
