@@ -1,3 +1,7 @@
-module "virtual_machine" {
-   source = "./Modules"
+resource "aws_instance" "web" {
+  ami                    = "${var.ami}"
+  instance_type          = "${var.instance_type}"
+  tags = {
+    Name = "first-tf-instance"
+  }
 }
