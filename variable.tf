@@ -10,7 +10,7 @@ variable "secret_ket" {
   type = string
 }
 
-variable "aws_instance" {
+variable "instance_type" {
   type = string
 }
 
