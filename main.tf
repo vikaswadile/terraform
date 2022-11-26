@@ -2,6 +2,6 @@ resource "aws_instance" "web" {
   ami                    = "${var.ami}"
   instance_type          = "${var.instance_type}"
   tags = {
-    Name = "first-tf-instance"
+    Name = ${var.instance_name}"
   }
 }
