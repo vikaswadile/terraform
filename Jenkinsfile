@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     tools {
   terraform 'terraform'
 }
@@ -21,11 +22,11 @@ pipeline {
     }
   }
 
-  stage('apply') {
-    steps {
-      // One or more steps need to be included within the steps block.
-    }
-  }
+//   stage('apply') {
+//     steps {
+//       // One or more steps need to be included within the steps block.
+//     }
+//   }
 
 }
 
