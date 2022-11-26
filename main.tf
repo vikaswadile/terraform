@@ -1,3 +1,3 @@
-output "hello_block" {
-  value = "Hi ${var.hello}"
+module "virtual_machine" {
+   source = "./Modules"
 }
